@@ -2,22 +2,24 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text('My First App'),
         centerTitle: true,
         backgroundColor: Colors.tealAccent,
       ),
       body: Center(
-        child: Text(
-          'Hello Ninjas',
-          style: TextStyle(
-            fontSize: 20,
-            letterSpacing: 2.0,
-            fontWeight: FontWeight.bold,
-            color: Colors.cyan,
-            fontFamily: 'IndieFlower',
-          ),
+        child: IconButton(
+          onPressed: () { print("Like +1");  },
+          icon: Icon(Icons.thumb_up),
         ),
       ),
       floatingActionButton: FloatingActionButton(
@@ -25,7 +27,7 @@ void main() {
         backgroundColor: Colors.tealAccent,
         child: Text('Click'),
       ),
-    ),
-  ));
+    );
+  }
 }
 
