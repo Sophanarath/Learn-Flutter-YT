@@ -16,11 +16,81 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.tealAccent,
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () { print("Like +1");  },
-          icon: Icon(Icons.thumb_up),
-        ),
+      body: Container(
+        padding: EdgeInsets.all(20),
+        margin: EdgeInsets.all(20),
+        color: Colors.grey[200],
+        child: Container
+          (
+          color: Colors.red,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Colors.blueAccent,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(onPressed: () {  }, color: Colors.amberAccent, icon: Icon(Icons.home)),
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.account_balance)),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.thumbs_up_down)),
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.add_ic_call_sharp)),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(40),
+                color: Colors.greenAccent,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.home)),
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.account_balance)),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.thumbs_up_down)),
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.add_ic_call_sharp)),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.amberAccent,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.home)),
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.account_balance)),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.thumbs_up_down)),
+                        IconButton(onPressed: () {  }, icon: Icon(Icons.add_ic_call_sharp)),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
